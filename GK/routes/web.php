@@ -44,3 +44,10 @@ Route::get('/holiday_setting', 'Calendar\HolidaySettingController@form')
     ->name("holiday_setting");
 Route::post('/holiday_setting', 'Calendar\HolidaySettingController@update')
     ->name("update_holiday_setting");
+Route::get('/extra_holiday_setting', 
+    'Calendar\HolidaySettingController@form')
+    ->name("extra_holiday_setting");
+    
+Route::post('/extra_holiday_setting',
+    'Calendar\HolidaySettingController@update')
+    ->name("update_extra_holiday_setting");

@@ -83,9 +83,9 @@
 								<th>祝日</th>
 								<td>
 									<input type="radio" name="flag_holiday" value="{{ $FLAG_OPEN }}" {{ ($setting->isOpenHoliday()) ? 'checked' : '' }} id="flag_holiday_ope" />
-									<label for="flag_holiday_open">営業日</label>
+									<label for="flag_holiday_open">ON</label>
 									<input type="radio" name="flag_holiday" value="{{ $FLAG_CLOSE }}" {{ ($setting->isCloseHoliday()) ? 'checked' : '' }} id="flag_holiday_clos" />
-									<label for="flag_holiday_close">休み</label>
+									<label for="flag_holiday_close">OFF</label>
 								</td>
 							</tr>
 						</table>
